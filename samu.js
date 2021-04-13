@@ -335,7 +335,11 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				} 
-				teks = `_🌚En nombre de todos los integrantes de este increible grupo🍭_ @${num.split('@')[0]}\n _Te damos la Bienvenida a_ *${mdata.subject}* _Espero y sea de su agrado🧘🏻‍♂️ ,contamos con su apoyo🔥 lee la descripción para evitar ser eliminado_ *(🐤DIVIÉRTETE✨)*`
+				teks = `_En el nombre de Jesús le damos la bienvenida a este humilde grupo, agradecemos cualquier aporte que ayude a edificar vidas... Que la gracia del Señor les cubra por siempre_ @${num.split('@')[0]}
+
+*${mdata.subject}* _Fue creado con la intención de edificar vidas para la gloria del Señor, espero sea de su agrado y puedas ayudar con tu aporte a esta misión.. Te invito a que trabajemos juntos para la viña del señor 🌟Recuerda lo que nos dice el Señor, a través de las sagradas escrituras :_
+*Mateo 10:33....*
+*Pero cualquiera que me niegue delante de los hombres, yo también lo negaré delante de mi Padre que está en los cielos.*`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -345,7 +349,14 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `_😹Finalmente la carga del grupo se redujo en -1 *''Adiós''* @${num.split('@')[0]} No te extrañaremos😆, el próximo en salir será kuakiado ok.no_`
+				teks = `*1 Corintios 15:58*
+*Así que, hermanos míos amados, estad firmes y constantes, creciendo en la obra del Señor siempre, sabiendo que vuestro trabajo en el Señor no es en vano.*
+-1 "Dios bendiga la vida de" @${num.split('@')[0]} Lastimosamente se ha ido, sus razones tendrá, pero la lucha continúa hasta alcanzar la victoria en Cristo Jesús 
+
+*Mateo 11:12*
+*Desde los días de Juan el Bautista hasta ahora, al Reino de los cielos se da vida; y los valientes lo arrebatan.*
+
+Seamos valiente para arrebatar el reino que Jesús nos prepara en el cielo, no te canses ni desmayes, Solo confía. ... Mi alma adora, al Padre al hijo y al Espíritu Santo 🙇🏻‍♀️`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}

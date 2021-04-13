@@ -107,14 +107,14 @@ const { limit } = require('./database/menu/limit')
 // Load Vcard Contact
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:🔐Samu330🏆\n' // full name
+            + 'FN:🎩EDAR504🇭🇳\n' // full name
             + 'ORG:🐬NyanBot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=14694222222:+14694222222\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=50498798682:+50498798682\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = botPrefix
 blocked = []
 limitawal = userDefaultLimit
-cr = '*🔐Samu330🏆*'
+cr = '*🎩EDAR504🇭🇳*'
 memberlimit = memberLimitss
 
 // Functions
@@ -335,7 +335,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				} 
-				teks = `_🌚En nombre de todos los integrantes de este increible grupo🪀_ @${num.split('@')[0]}\n _Te damos la Bienvenida a_ *${mdata.subject}* _Espero y sea de su agrado🧘🏻‍♂️ ,contamos con su apoyo🔥 lee la descripción para evitar ser eliminado_ *(🐦DIVIÉRTETE✨)*`
+				teks = `_🌚En nombre de todos los integrantes de este increible grupo🍭_ @${num.split('@')[0]}\n _Te damos la Bienvenida a_ *${mdata.subject}* _Espero y sea de su agrado🧘🏻‍♂️ ,contamos con su apoyo🔥 lee la descripción para evitar ser eliminado_ *(🐤DIVIÉRTETE✨)*`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -345,7 +345,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `_👋🏻Adiós_ @${num.split('@')[0]} _🙂Se fue asi como el amor de eya we💔, No te extrañaremos😆, el próximo en salir será kuakiado ok.no_`
+				teks = `_😹Finalmente la carga del grupo se redujo en -1 *''Adiós''* @${num.split('@')[0]} No te extrañaremos😆, el próximo en salir será kuakiado ok.no_`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
